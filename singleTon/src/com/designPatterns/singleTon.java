@@ -7,28 +7,23 @@ public class singleTon {
 	public singleTon() {
 		super();
 	}
-	
-	
+
 	public static singleTon getInstance() {
-		
-		
+
 		if (null == instance) {
-			
+
 			synchronized (singleTon.class) {
-				
-				if(null == instance) {
-					
+
+				if (null == instance) {
+
 					instance = new singleTon();
 				}
 			}
-			
-			
+
 		}
-		
+
 		return instance;
-		
+
 	}
-	
-	
-	
+
 }
